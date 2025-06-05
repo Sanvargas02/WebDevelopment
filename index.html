@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Student Registration</h1>
+            <p>Please fill out all required fields to complete your registration</p>
+        </div>
+
+        <form action="#" method="POST">
+            <!-- Personal Information Section -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name <span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name <span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" id="birthDate" name="birthDate">
+                </div>
+            </div>
+
+            <!-- Academic Information Section -->
+            <div class="form-group">
+                <label for="program">Program of Study <span class="required">*</span></label>
+                <select id="program" name="program" required>
+                    <option value="">Select your program</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="business">Business Administration</option>
+                    <option value="arts">Liberal Arts</option>
+                    <option value="sciences">Natural Sciences</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Year Level <span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="freshman" name="year" value="freshman" required>
+                        <label for="freshman">Freshman</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="sophomore" name="year" value="sophomore" required>
+                        <label for="sophomore">Sophomore</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="junior" name="year" value="junior" required>
+                        <label for="junior">Junior</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="senior" name="year" value="senior" required>
+                        <label for="senior">Senior</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Interests (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports & Recreation</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music & Arts</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="technology" name="interests" value="technology">
+                        <label for="technology">Technology</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="volunteering" name="interests" value="volunteering">
+                        <label for="volunteering">Volunteering</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="reading" name="interests" value="reading">
+                        <label for="reading">Reading & Writing</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="travel" name="interests" value="travel">
+                        <label for="travel">Travel & Culture</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" placeholder="Tell us anything else you'd like us to know..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Complete Registration</button>
+        </form>
+    </div>
+</body>
+</html>
